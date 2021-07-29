@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #122233;
+  padding: 0 8px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1250px;
+  background-color: #fff;
+}
+
+.container .submain__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+@media screen and (max-width: 712px) {
+  .container .submain__header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .submain__header .menuToggle {
+    background-image: url(../img/bars-solid.svg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 8px;
+  }
+  .container .submain__header .menuToggle.active {
+    background-image: url(../img/times-circle-regular.svg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 8px;
+  }
+}
+
+.container .header__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.container .navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1653c6;
+}
+
+@media screen and (max-width: 712px) {
+  .container .navbar__menu {
+    display: none;
+    position: absolute;
+    top: 97px;
+    padding: 10px 0;
+  }
+  .container .navbar__menu.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.container .navbar__menu .navlinks {
+  list-style: none;
+}
+
+.container .navbar__menu .navlink {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  font-weight: 700;
+}
+
+.container .navbar__menu .navlink:hover {
+  background-color: #36cbef;
+  color: #122233;
+}
+
+@media screen and (max-width: 712px) {
+  .container .navbar__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.container .banner__img {
+  width: 100%;
+  display: block;
+}
+
+.main__informacion {
+  padding: 32px 0;
+}
+
+.main__informacion .informacion__header {
+  padding: 32px 0;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main__informacion .informacion__heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: #008000;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 375px) {
+  .main__informacion .informacion__heading {
+    font-size: 24px;
+  }
+}
+
+.main__informacion .informacion__txt {
+  font-size: 24px;
+  padding: 24px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .main__informacion .informacion__txt {
+    font-size: 16px;
+  }
+}
+
+.informacion__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 10px;
+}
+
+.informacion__body .informacion__picture {
+  -ms-flex-preferred-size: 390px;
+      flex-basis: 390px;
+}
+
+.informacion__body .informacion__picture .informacion__img {
+  width: 100%;
+}
+
+.informacion__body .informacion__picture .informacion__img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  cursor: pointer;
+}
+
+.informacion__body .informacion__picture .informacion__desc {
+  padding: 16px 0;
+}
+
+.informacion__body .informacion__picture .informacion__paragraph {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .informacion__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.main__footer {
+  padding: 32px 0;
+  background-color: #1653c6;
+}
+
+.main__footer .footer__paragraph {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 8px;
+}
+/*# sourceMappingURL=estilos.css.map */

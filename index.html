@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/513e65e438.js" crossorigin="anonymous"></script>
+    <title>Studio Creations</title>
+</head>
+<body>
+    <div class="container">
+        <header class="main__header">
+            <nav class="submain__header">
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="" class="header__img">
+                </div>
+                <div class="menuToggle" onclick="toggleMenu();"></div>
+                <ul class="navbar__menu">
+                    <li class="navlinks">
+                        <a href="" class="navlink">inicio</a>
+                    </li>
+                    <li class="navlinks">
+                        <a href="" class="navlink">nosotros</a>
+                    </li>
+                    <li class="navlinks">
+                        <a href="" class="navlink">producto</a>
+                    </li>
+                    <li class="navlinks">
+                        <a href="" class="navlink">servicios</a>
+                    </li>
+                    <li class="navlinks">
+                        <a href="" class="navlink">blog</a>
+                    </li>
+                    <li class="navlinks">
+                        <a href="" class="navlink">contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main__banner">
+            <img src="img/banner-web-design.jpg" alt="" class="banner__img">
+        </section>
+        <section class="main__informacion">
+            <div class="informacion__header">
+                <h1 class="informacion__heading">especialistas en diseño web</h1>
+                <p class="informacion__txt">
+                    <em>Contamos con los mejores servicios para su empresa, que espera comuniquese con nosotros.</em>
+                </p>
+            </div>
+            <div class="informacion__body">
+                <figure class="informacion__picture">
+                    <img src="img/servicio-web-design.jpg" alt="" class="informacion__img">
+                    <figcaption class="informacion__desc">
+                        <p class="informacion__paragraph">Diseño Web</p>
+                    </figcaption>
+                </figure>
+                <figure class="informacion__picture">
+                    <img src="img/servicio-tiendas-virtuales.jpg" alt="" class="informacion__img">
+                    <figcaption class="informacion__desc">
+                        <p class="informacion__paragraph">Tiendas Virtuales</p>
+                    </figcaption>
+                </figure>
+                <figure class="informacion__picture">
+                    <img src="img/servicio-marketing-digital.jpg" alt="" class="informacion__img">
+                    <figcaption class="informacion__desc">
+                        <p class="informacion__paragraph">Marketing Digital</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <footer class="main__footer">
+            <p class="footer__paragraph">Realizado por usuario</p>
+        </footer>
+    </div>
+</body>
+<script>
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        menuToggle.classList.toggle('active');
+        const navbar__menu = document.querySelector('.navbar__menu');
+        navbar__menu.classList.toggle('active');
+    }
+</script>
+</html>
